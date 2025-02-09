@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_app/features/splash/presentation/views/splash_view.dart';
+import 'package:stylish_app/core/utils/app_router.dart';
 
 void main() {
   runApp(StylishApp());
@@ -10,8 +10,8 @@ class StylishApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashView(),
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
     );
   }
 }

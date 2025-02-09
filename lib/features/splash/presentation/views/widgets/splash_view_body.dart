@@ -65,7 +65,7 @@ class _SplachViewBodyState extends State<SplachViewBody>
       const Duration(seconds: 2),
       () {
         // ignore: use_build_context_synchronously
-        GoRouter.of(context).push(AppRouter.kHomeView);
+        GoRouter.of(context).pushReplacement(AppRouter.kOnboardingView);
       },
     );
   }
