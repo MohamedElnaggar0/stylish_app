@@ -19,13 +19,22 @@ class CustomOnBoardingContainer extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          SvgPicture.asset(onboardingContent.image),
+          SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.4,
+              child: SvgPicture.asset(onboardingContent.image)),
+          const SizedBox(
+            height: 20,
+          ),
           Text(
             onboardingContent.title,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
+          ),
+          const SizedBox(
+            height: 20,
           ),
           Text(
             onboardingContent.description,

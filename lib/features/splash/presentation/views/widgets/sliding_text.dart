@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_app/constansts.dart';
 
 class SlidingText extends StatelessWidget {
   final Animation<Offset> slidingAnimation;
@@ -12,10 +13,10 @@ class SlidingText extends StatelessWidget {
         builder: (context, _) {
           return SlideTransition(
             position: slidingAnimation,
-            child: const Text(
+            child: Text(
               'Stylish',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Color(0xffF83758), fontSize: 40),
+              style: TextStyle(color: kPrimaryColor, fontSize: 40),
             ),
           );
         });
