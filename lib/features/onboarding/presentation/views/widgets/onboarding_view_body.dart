@@ -45,7 +45,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
         for (int i = 0; i < widget.onboardingContent.length; i++)
           Container(
             margin: const EdgeInsets.all(4),
-            width: currentIndex == i ? 20 : 8,
+            width: currentIndex == i ? 35 : 8,
             height: 8,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(
