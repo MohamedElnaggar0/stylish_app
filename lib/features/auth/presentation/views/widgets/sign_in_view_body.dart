@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_app/core/widgets/custom_button.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_password_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_widget.dart';
@@ -17,8 +18,11 @@ class SignInViewBody extends StatelessWidget {
         CustomPasswordTextFeild(
           hintText: 'Password',
           suffixIcon: Icons.visibility,
-          prefixIcon: Icons.person,
+          prefixIcon: Icons.lock,
         ),
+        CustomButton(
+          text: 'Login',
+        )
       ],
     );
   }
