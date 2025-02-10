@@ -1,16 +1,18 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:stylish_app/constansts.dart';
-import 'package:stylish_app/core/utils/app_router.dart';
-import 'package:stylish_app/core/utils/assets.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
 import 'package:stylish_app/core/widgets/custom_login_icon.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_password_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_widget.dart';
 
-class SignInViewBody extends StatelessWidget {
-  const SignInViewBody({super.key});
+import '../../../../../constansts.dart';
+import '../../../../../core/utils/app_router.dart';
+import '../../../../../core/utils/assets.dart';
+
+class SignUpViewBody extends StatelessWidget {
+  const SignUpViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,34 +23,29 @@ class SignInViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 50),
-            CustomTextWidget(text: 'Welcome\nBack!'),
+            CustomTextWidget(text: 'Create an \naccount!'),
             SizedBox(height: 30),
             CustomTextFeild(
-              hintText: 'Username or Email',
-              prefixIcon: Icons.person,
-            ),
+                hintText: 'Username or Email', prefixIcon: Icons.person),
             SizedBox(height: 30),
             CustomPasswordTextFeild(
               hintText: 'Password',
               suffixIcon: Icons.visibility,
               prefixIcon: Icons.lock,
             ),
-            SizedBox(height: 10),
-            GestureDetector(
-              onTap: () {
-                GoRouter.of(context).go(AppRouter.kForgetPasswordView);
-              },
-              child: Align(
-                alignment: Alignment.topRight,
-                child: Text('Forgot Password?',
-                    style: TextStyle(color: kPrimaryColor, fontSize: 16)),
-              ),
+            SizedBox(height: 30),
+            CustomPasswordTextFeild(
+              hintText: 'Confirm Password',
+              prefixIcon: Icons.lock,
+              suffixIcon: Icons.visibility,
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 20),
+            _termsOfUseWidget(),
+            SizedBox(height: 30),
             CustomButton(
-              text: 'Login',
+              text: 'Create Account',
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 30),
             Center(
               child: Text(
                 '-OR Continue with-',
@@ -69,7 +66,7 @@ class SignInViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Create An Account ',
+                  'I Already Have an Account ',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 20,
@@ -77,10 +74,10 @@ class SignInViewBody extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    GoRouter.of(context).go(AppRouter.kSignUpView);
+                    GoRouter.of(context).go(AppRouter.kSignInView);
                   },
                   child: Text(
-                    'Sign Up',
+                    'Login',
                     style: TextStyle(
                       color: kPrimaryColor,
                       fontSize: 20,
@@ -94,4 +91,29 @@ class SignInViewBody extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget _termsOfUseWidget() {
+  return Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+    child: RichText(
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: 'By clicking the ',
+            style: TextStyle(color: Colors.grey, fontSize: 18),
+          ),
+          TextSpan(
+            text: 'Register',
+            style: TextStyle(color: kPrimaryColor, fontSize: 18),
+            recognizer: TapGestureRecognizer()..onTap = () {},
+          ),
+          TextSpan(
+            text: ' button, you agree\nto the public offer',
+            style: TextStyle(color: Colors.grey, fontSize: 18),
+          ),
+        ],
+      ),
+    ),
+  );
 }
