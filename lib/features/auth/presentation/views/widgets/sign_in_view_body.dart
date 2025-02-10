@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_app/constansts.dart';
+import 'package:stylish_app/core/utils/assets.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
 import 'package:stylish_app/core/widgets/custom_login_icon.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_password_text_feild.dart';
@@ -10,25 +12,66 @@ class SignInViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: 50),
-        CustomTextWidget(text: 'Welcome\nBack!'),
-        CustomTextFeild(
-            hintText: 'Username or Email', prefixIcon: Icons.person),
-        CustomPasswordTextFeild(
-          hintText: 'Password',
-          suffixIcon: Icons.visibility,
-          prefixIcon: Icons.lock,
-        ),
-        CustomButton(
-          text: 'Login',
-        ),
-        SizedBox(height: 30),
-        CustomLoginIcon(
-          image: '',
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(height: 50),
+          CustomTextWidget(text: 'Welcome\nBack!'),
+          SizedBox(height: 30),
+          CustomTextFeild(
+              hintText: 'Username or Email', prefixIcon: Icons.person),
+          SizedBox(height: 30),
+          CustomPasswordTextFeild(
+            hintText: 'Password',
+            suffixIcon: Icons.visibility,
+            prefixIcon: Icons.lock,
+          ),
+          SizedBox(height: 10),
+          GestureDetector(
+            onTap: () {},
+            child: Align(
+              alignment: Alignment.topRight,
+              child: Text('Forgot Password?',
+                  style: TextStyle(color: kPrimaryColor, fontSize: 16)),
+            ),
+          ),
+          SizedBox(height: 60),
+          CustomButton(
+            text: 'Login',
+          ),
+          SizedBox(height: 60),
+          Center(
+            child: Text(
+              '-OR Continue with-',
+              style: TextStyle(fontSize: 20, color: Colors.grey),
+            ),
+          ),
+          SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomLoginIcon(image: AssetsData.loginImages[0]),
+              CustomLoginIcon(image: AssetsData.loginImages[1]),
+              CustomLoginIcon(image: AssetsData.loginImages[2]),
+            ],
+          ),
+          SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Create An Account ',
+                  style: TextStyle(color: Colors.grey, fontSize: 20)),
+              GestureDetector(
+                onTap: () {},
+                child: Text('Sign Up',
+                    style: TextStyle(color: kPrimaryColor, fontSize: 20)),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

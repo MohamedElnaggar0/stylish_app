@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stylish_app/constansts.dart';
 
 class CustomLoginIcon extends StatelessWidget {
@@ -13,7 +14,7 @@ class CustomLoginIcon extends StatelessWidget {
         radius: 39,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         child: Center(
-          child: Image(image: AssetImage(image)),
+          child: SvgPicture.asset(image),
         ),
       ),
     );
