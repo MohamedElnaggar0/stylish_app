@@ -44,6 +44,9 @@ class SignUpViewBody extends StatelessWidget {
             SizedBox(height: 30),
             CustomButton(
               text: 'Create Account',
+              onTap: () {
+                GoRouter.of(context).go(AppRouter.kSignInView);
+              },
             ),
             SizedBox(height: 30),
             Center(
@@ -57,7 +60,9 @@ class SignUpViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomLoginIcon(image: AssetsData.loginImages[0]),
+                SizedBox(width: 10),
                 CustomLoginIcon(image: AssetsData.loginImages[1]),
+                SizedBox(width: 10),
                 CustomLoginIcon(image: AssetsData.loginImages[2]),
               ],
             ),

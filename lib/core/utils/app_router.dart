@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:stylish_app/features/auth/presentation/views/forget_password_view.dart';
 import 'package:stylish_app/features/auth/presentation/views/sign_in_view.dart';
 import 'package:stylish_app/features/auth/presentation/views/sign_up_view.dart';
+import 'package:stylish_app/features/home/presentation/views/get_started_view.dart';
 import 'package:stylish_app/features/home/presentation/views/home_view.dart';
 import 'package:stylish_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:stylish_app/features/splash/presentation/views/splash_view.dart';
@@ -12,6 +13,7 @@ abstract class AppRouter {
   static const kSignInView = '/signInView';
   static const kSignUpView = '/signUpView';
   static const kForgetPasswordView = '/forgetPasswordView';
+  static const kGetStartedView = '/getStartedView';
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -37,7 +39,10 @@ abstract class AppRouter {
       GoRoute(
         path: kForgetPasswordView,
         builder: (context, state) => const ForgetPasswordView(),
-      )
+      ),
+      GoRoute(
+          path: kGetStartedView,
+          builder: (context, state) => const GetStartedView())
     ],
   );
 }

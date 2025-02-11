@@ -47,6 +47,9 @@ class SignInViewBody extends StatelessWidget {
             SizedBox(height: 60),
             CustomButton(
               text: 'Login',
+              onTap: () {
+                GoRouter.of(context).go(AppRouter.kGetStartedView);
+              },
             ),
             SizedBox(height: 60),
             Center(
@@ -60,7 +63,9 @@ class SignInViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomLoginIcon(image: AssetsData.loginImages[0]),
+                SizedBox(width: 10),
                 CustomLoginIcon(image: AssetsData.loginImages[1]),
+                SizedBox(width: 10),
                 CustomLoginIcon(image: AssetsData.loginImages[2]),
               ],
             ),
