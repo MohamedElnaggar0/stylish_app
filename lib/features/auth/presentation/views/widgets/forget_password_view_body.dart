@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:stylish_app/constansts.dart';
 import 'package:stylish_app/core/utils/app_router.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
-import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_feild.dart';
+import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_widget.dart';
 
 class ForgetPasswordViewBody extends StatelessWidget {
@@ -50,7 +50,7 @@ Widget _sendEmailWidget() {
         color: kPrimaryColor,
       ),
       children: [
-        TextSpan(
+        const TextSpan(
           text: 'We will send you a message to set or reset\nyour new password',
           style: TextStyle(
             fontSize: 16,

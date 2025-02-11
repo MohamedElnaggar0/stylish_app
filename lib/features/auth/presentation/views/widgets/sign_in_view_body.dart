@@ -6,7 +6,7 @@ import 'package:stylish_app/core/utils/assets.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
 import 'package:stylish_app/core/widgets/custom_login_icon.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_password_text_feild.dart';
-import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_feild.dart';
+import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text_widget.dart';
 
 class SignInViewBody extends StatelessWidget {
@@ -20,20 +20,20 @@ class SignInViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 50),
-            CustomTextWidget(text: 'Welcome\nBack!'),
-            SizedBox(height: 30),
-            CustomTextFeild(
+            const SizedBox(height: 50),
+            const CustomTextWidget(text: 'Welcome\nBack!'),
+            const SizedBox(height: 30),
+            const CustomTextFeild(
               hintText: 'Username or Email',
               prefixIcon: Icons.person,
             ),
-            SizedBox(height: 30),
-            CustomPasswordTextFeild(
+            const SizedBox(height: 30),
+            const CustomPasswordTextFeild(
               hintText: 'Password',
               suffixIcon: Icons.visibility,
               prefixIcon: Icons.lock,
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             GestureDetector(
               onTap: () {
                 GoRouter.of(context).go(AppRouter.kForgetPasswordView);
@@ -44,21 +44,21 @@ class SignInViewBody extends StatelessWidget {
                     style: TextStyle(color: kPrimaryColor, fontSize: 16)),
               ),
             ),
-            SizedBox(height: 60),
+            const SizedBox(height: 60),
             CustomButton(
               text: 'Login',
               onTap: () {
                 GoRouter.of(context).go(AppRouter.kGetStartedView);
               },
             ),
-            SizedBox(height: 60),
-            Center(
+            const SizedBox(height: 60),
+            const Center(
               child: Text(
                 '-OR Continue with-',
                 style: TextStyle(fontSize: 20, color: Colors.grey),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -69,11 +69,11 @@ class SignInViewBody extends StatelessWidget {
                 CustomLoginIcon(image: AssetsData.loginImages[2]),
               ],
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Create An Account ',
                   style: TextStyle(
                     color: Colors.grey,

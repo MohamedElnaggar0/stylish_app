@@ -16,7 +16,10 @@ class SlidingText extends StatelessWidget {
             child: Text(
               'Stylish',
               textAlign: TextAlign.center,
-              style: TextStyle(color: kPrimaryColor, fontSize: 40),
+              style: TextStyle(
+                  color: kPrimaryColor,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold),
             ),
           );
         });
