@@ -7,6 +7,8 @@ class AssetsData {
   static const logo = 'assets/images/logo.svg';
   static const profile = 'assets/images/profile.png';
   static const menu = 'assets/images/menu.svg';
+  static const arrows = 'assets/images/up_down_arrow.svg';
+  static const filter = 'assets/images/filter.svg';
 
   static final List<String> loginImages = [
     'assets/images/google.svg',
