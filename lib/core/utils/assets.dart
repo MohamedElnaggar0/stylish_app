@@ -9,7 +9,11 @@ class AssetsData {
   static const menu = 'assets/images/menu.svg';
   static const arrows = 'assets/images/up_down_arrow.svg';
   static const filter = 'assets/images/filter.svg';
-
+  static const beauty = 'assets/images/beauty.png';
+  static const fashion = 'assets/images/fashion.png';
+  static const kids = 'assets/images/kids.png';
+  static const mens = 'assets/images/mens.png';
+  static const womens = 'assets/images/womens.png';
   static final List<String> loginImages = [
     'assets/images/google.svg',
     'assets/images/apple.svg',

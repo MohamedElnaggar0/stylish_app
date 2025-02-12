@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+
+import 'package:stylish_app/core/utils/category_content.dart';
 import 'package:stylish_app/core/widgets/custom_appbar.dart';
 import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/core/widgets/sort_and_filter.dart';
+import 'package:stylish_app/features/home/presentation/views/widgets/category_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -10,18 +13,21 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: const Column(
+      child: Column(
         children: [
-          SizedBox(height: 30),
-          CustomAppbar(),
-          CustomTextFeild(
+          const SizedBox(height: 30),
+          const CustomAppbar(),
+          const CustomTextFeild(
             hintText: 'Search any Product',
             prefixIcon: Icons.search,
             suffixIcon: Icons.mic,
           ),
-          SizedBox(height: 20),
-          SortAndFilter(
+          const SizedBox(height: 20),
+          const SortAndFilter(
             text: 'All Featured',
+          ),
+          CategoryListView(
+            categories: CategoryContent.categoryContent,
           ),
         ],
       ),
