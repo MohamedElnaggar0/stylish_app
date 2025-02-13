@@ -9,7 +9,7 @@ import 'package:stylish_app/features/auth/presentation/views/widgets/custom_text
 
 import '../../../../../constansts.dart';
 import '../../../../../core/utils/app_router.dart';
-import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/login_images_content.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
@@ -59,11 +59,11 @@ class SignUpViewBody extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomLoginIcon(image: AssetsData.loginImages[0]),
+                CustomLoginIcon(image: LoginImagesContent.loginImages[0]),
                 SizedBox(width: 10),
-                CustomLoginIcon(image: AssetsData.loginImages[1]),
+                CustomLoginIcon(image: LoginImagesContent.loginImages[1]),
                 SizedBox(width: 10),
-                CustomLoginIcon(image: AssetsData.loginImages[2]),
+                CustomLoginIcon(image: LoginImagesContent.loginImages[2]),
               ],
             ),
             const SizedBox(height: 30),

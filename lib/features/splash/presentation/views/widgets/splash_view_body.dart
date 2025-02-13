@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:stylish_app/core/utils/app_router.dart';
-import 'package:stylish_app/core/utils/assets.dart';
 import 'package:stylish_app/features/splash/presentation/views/widgets/sliding_text.dart';
+import 'package:stylish_app/core/gen/assets.gen.dart';
 
 class SplachViewBody extends StatefulWidget {
   const SplachViewBody({super.key});
@@ -38,7 +38,7 @@ class _SplachViewBodyState extends State<SplachViewBody>
         // crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SvgPicture.asset(
-            AssetsData.stylishLogo,
+            Assets.svg.stylishLogo,
           ),
           const SizedBox(
             width: 5,

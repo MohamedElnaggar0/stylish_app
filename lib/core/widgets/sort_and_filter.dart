@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_app/core/utils/assets.dart';
+import 'package:stylish_app/core/gen/assets.gen.dart';
 import 'package:stylish_app/core/widgets/custom_sort_filter_container.dart';
 
 class SortAndFilter extends StatelessWidget {
@@ -33,12 +33,12 @@ class SortAndFilter extends StatelessWidget {
           const Spacer(),
           CustomSortFilterContainer(
             text: 'sort',
-            svgImage: AssetsData.arrows,
+            svgImage: Assets.svg.upDownArrow,
           ),
           const SizedBox(width: 10),
           CustomSortFilterContainer(
             text: 'filter',
-            svgImage: AssetsData.filter,
+            svgImage: Assets.svg.filter,
           ),
         ],
       ),

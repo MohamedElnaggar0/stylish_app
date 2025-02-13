@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:stylish_app/core/gen/assets.gen.dart';
 import 'package:stylish_app/core/utils/app_router.dart';
-import 'package:stylish_app/core/utils/assets.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
 
 class GetStartedViewBody extends StatelessWidget {
@@ -12,7 +12,7 @@ class GetStartedViewBody extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: const AssetImage(AssetsData.getStarted),
+          image: AssetImage(Assets.images.getStarted.path),
           fit: BoxFit.cover,
         ),
       ),

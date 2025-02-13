@@ -1,4 +1,4 @@
-import 'package:stylish_app/core/utils/assets.dart';
+import 'package:stylish_app/core/gen/assets.gen.dart';
 
 class CategoryContent {
   final String image, title;
@@ -6,23 +6,23 @@ class CategoryContent {
 
   static List<CategoryContent> categoryContent = [
     CategoryContent(
-      image: AssetsData.beauty,
+      image: Assets.images.beauty.path,
       title: 'Beauty',
     ),
     CategoryContent(
-      image: AssetsData.fashion,
+      image: Assets.images.fashion.path,
       title: 'Fashion',
     ),
     CategoryContent(
-      image: AssetsData.kids,
+      image: Assets.images.kids.path,
       title: 'Kids',
     ),
     CategoryContent(
-      image: AssetsData.mens,
+      image: Assets.images.mens.path,
       title: 'Mens',
     ),
     CategoryContent(
-      image: AssetsData.womens,
+      image: Assets.images.womens.path,
       title: 'Womens',
     ),
   ];

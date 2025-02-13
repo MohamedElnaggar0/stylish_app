@@ -26,6 +26,7 @@ class HomeViewBody extends StatelessWidget {
           const SortAndFilter(
             text: 'All Featured',
           ),
+          const SizedBox(height: 15),
           CategoryListView(
             categories: CategoryContent.categoryContent,
           ),

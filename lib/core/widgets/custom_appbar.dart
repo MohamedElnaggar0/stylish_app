@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:stylish_app/core/utils/assets.dart';
+import 'package:stylish_app/core/gen/assets.gen.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
@@ -13,9 +13,9 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SvgPicture.asset(AssetsData.menu),
-          SvgPicture.asset(AssetsData.logo),
-          Image.asset(AssetsData.profile),
+          SvgPicture.asset(Assets.svg.menu),
+          SvgPicture.asset(Assets.svg.logo),
+          Image.asset(Assets.images.profile.path),
         ],
       ),
     );
