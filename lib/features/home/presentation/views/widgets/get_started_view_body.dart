@@ -34,7 +34,7 @@ class GetStartedViewBody extends StatelessWidget {
           CustomButton(
               text: 'Get Started',
               onTap: () {
-                GoRouter.of(context).go(AppRouter.kHomeView);
+                GoRouter.of(context).go(AppRouter.kBottoNavBar);
               })
         ]),
       ),
