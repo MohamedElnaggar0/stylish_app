@@ -1,1 +1,1 @@
-// flutter packages pub run build_runner
+// dart run build_runner build

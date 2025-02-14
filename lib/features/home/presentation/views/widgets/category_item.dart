@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({super.key, required this.image, required this.text});
@@ -13,14 +12,14 @@ class CategoryItem extends StatelessWidget {
           radius: 39,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           child: Center(
-            child: SvgPicture.asset(
+            child: Image.asset(
               image,
             ),
           ),
         ),
         Text(
           text,
-          style: TextStyle(fontSize: 15),
+          style: TextStyle(fontSize: 14),
         )
       ],
     );
