@@ -38,7 +38,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
         itemCount: widget.onboardingContent.length);
   }
 
-  Row dotPage() {
+  Widget dotPage() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

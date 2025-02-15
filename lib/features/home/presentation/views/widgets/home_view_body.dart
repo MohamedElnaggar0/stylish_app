@@ -12,28 +12,31 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          const SizedBox(height: 30),
-          const CustomAppbar(),
-          const CustomTextFeild(
-            hintText: 'Search any Product',
-            prefixIcon: Icons.search,
-            suffixIcon: Icons.mic,
-          ),
-          const SizedBox(height: 20),
-          const SortAndFilter(
-            text: 'All Featured',
-          ),
-          const SizedBox(height: 15),
-          CategoryListView(
-            categories: CategoryContent.categoryContent,
-          ),
-          const SizedBox(height: 15),
-          const SaleItemWidget(),
-        ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            const SizedBox(height: 30),
+            const CustomAppbar(),
+            const CustomTextFeild(
+              hintText: 'Search any Product',
+              prefixIcon: Icons.search,
+              suffixIcon: Icons.mic,
+            ),
+            const SizedBox(height: 20),
+            const SortAndFilter(
+              text: 'All Featured',
+            ),
+            const SizedBox(height: 15),
+            CategoryListView(
+              categories: CategoryContent.categoryContent,
+            ),
+            const SizedBox(height: 15),
+            const SaleItemWidget(),
+            const SizedBox(height: 15),
+          ],
+        ),
       ),
     );
   }

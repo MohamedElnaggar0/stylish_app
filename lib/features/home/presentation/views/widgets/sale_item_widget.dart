@@ -1,4 +1,4 @@
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:stylish_app/core/widgets/custom_container_with_border.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,8 +21,24 @@ class SaleItemWidget extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: _textItemContent(context),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 30,
+              ),
+              _textItemContent(context),
+            ],
+          ),
         ),
+        SizedBox(
+          height: 10,
+        ),
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          dotPage(Colors.grey.shade400),
+          dotPage(Color(0xffFFA3B3)),
+          dotPage(Colors.grey.shade400)
+        ])
       ],
     );
   }
@@ -49,30 +65,28 @@ class SaleItemWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          _shopNow(context),
+          CustomContainerWithBorder(),
         ],
       ),
     );
   }
 
-  Widget _shopNow(BuildContext context) {
-    return Container(
-      height: 40,
-      width: MediaQuery.of(context).size.width * 0.3,
-      decoration: BoxDecoration(
-        border: Border.all(width: 2, color: Colors.white),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'Shop Now ',
-            style: TextStyle(color: Colors.white, fontSize: 15),
+  Widget dotPage(Color? color) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          margin: const EdgeInsets.all(4),
+          width: 12,
+          height: 12,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(
+              10,
+            ),
+            color: color,
           ),
-          SvgPicture.asset(Assets.svg.arrow),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
