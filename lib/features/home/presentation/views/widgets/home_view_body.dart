@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:stylish_app/core/utils/category_content.dart';
 import 'package:stylish_app/core/widgets/custom_appbar.dart';
+import 'package:stylish_app/core/widgets/custom_product_item.dart';
 import 'package:stylish_app/core/widgets/custom_text_container.dart';
 import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/core/widgets/sort_and_filter.dart';
@@ -36,7 +37,11 @@ class HomeViewBody extends StatelessWidget {
             const SizedBox(height: 15),
             const SaleItemWidget(),
             const SizedBox(height: 15),
-            CustomTextContainer(color: Color(0xff4392F9))
+            CustomTextContainer(
+              color: Color(0xff4392F9),
+            ),
+            const SizedBox(height: 15),
+            const CustomProductItem()
           ],
         ),
       ),

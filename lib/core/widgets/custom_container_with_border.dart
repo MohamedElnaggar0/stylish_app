@@ -24,7 +24,9 @@ class CustomContainerWithBorder extends StatelessWidget {
           SizedBox(
             width: 10,
           ),
-          SvgPicture.asset(Assets.svg.arrow),
+          SvgPicture.asset(
+            Assets.svg.arrow,
+          ),
         ],
       ),
     );
