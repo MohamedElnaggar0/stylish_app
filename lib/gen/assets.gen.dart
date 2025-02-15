@@ -38,6 +38,10 @@ class $AssetsImagesGen {
   AssetGenImage get saleImage =>
       const AssetGenImage('assets/images/sale_image.png');
 
+  /// File path: assets/images/special_offers.png
+  AssetGenImage get specialOffers =>
+      const AssetGenImage('assets/images/special_offers.png');
+
   /// File path: assets/images/woman.png
   AssetGenImage get woman => const AssetGenImage('assets/images/woman.png');
 
@@ -54,6 +58,7 @@ class $AssetsImagesGen {
     mens,
     profile,
     saleImage,
+    specialOffers,
     woman,
     womens,
   ];
@@ -113,6 +118,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/sale_image.svg
   String get saleImage => 'assets/svg/sale_image.svg';
 
+  /// File path: assets/svg/special_offers.svg
+  String get specialOffers => 'assets/svg/special_offers.svg';
+
   /// File path: assets/svg/stylish_logo.svg
   String get stylishLogo => 'assets/svg/stylish_logo.svg';
 
@@ -144,6 +152,7 @@ class $AssetsSvgGen {
     onboarding3,
     profile,
     saleImage,
+    specialOffers,
     stylishLogo,
     upDownArrow,
     woman,

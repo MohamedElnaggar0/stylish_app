@@ -8,6 +8,7 @@ import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/core/widgets/sort_and_filter.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/category_list_view.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/sale_item_widget.dart';
+import 'package:stylish_app/features/home/presentation/views/widgets/special_offers_widget.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -41,9 +42,30 @@ class HomeViewBody extends StatelessWidget {
               color: Color(0xff4392F9),
             ),
             const SizedBox(height: 15),
-            const CustomProductItem()
+            customProductItemlistView(context),
+            const SizedBox(height: 15),
+            const SpecialOffersWidget(),
+            const SizedBox(height: 15),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget customProductItemlistView(context) {
+    double hight = MediaQuery.of(context).size.height * 0.30;
+    return SizedBox(
+      height: hight,
+      width: double.infinity,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: CustomProductItem(),
+          );
+        },
+        itemCount: 4,
       ),
     );
   }
