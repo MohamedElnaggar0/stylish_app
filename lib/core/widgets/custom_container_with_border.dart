@@ -1,16 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
 class CustomContainerWithBorder extends StatelessWidget {
-  const CustomContainerWithBorder({super.key});
-
+  const CustomContainerWithBorder({super.key, required this.text});
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: MediaQuery.of(context).size.width * 0.3,
+      height: 45,
+      width: MediaQuery.of(context).size.width * 0.31,
       decoration: BoxDecoration(
         border: Border.all(width: 2, color: Colors.white),
         borderRadius: BorderRadius.circular(10),
@@ -19,8 +18,11 @@ class CustomContainerWithBorder extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Shop Now ',
-            style: TextStyle(color: Colors.white, fontSize: 15),
+            text,
+            style: TextStyle(color: Colors.white, fontSize: 18),
+          ),
+          SizedBox(
+            width: 10,
           ),
           SvgPicture.asset(Assets.svg.arrow),
         ],

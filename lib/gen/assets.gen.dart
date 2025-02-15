@@ -61,6 +61,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Stylish_word.svg
   String get stylishWord => 'assets/svg/Stylish_word.svg';
 
+  /// File path: assets/svg/alarm.svg
+  String get alarm => 'assets/svg/alarm.svg';
+
   /// File path: assets/svg/apple.svg
   String get apple => 'assets/svg/apple.svg';
 
@@ -118,6 +121,7 @@ class $AssetsSvgGen {
   /// List of all assets
   List<String> get values => [
     stylishWord,
+    alarm,
     apple,
     arrow,
     facebook,

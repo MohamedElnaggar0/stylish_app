@@ -65,7 +65,9 @@ class SaleItemWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          CustomContainerWithBorder(),
+          CustomContainerWithBorder(
+            text: 'Shop Now',
+          ),
         ],
       ),
     );
