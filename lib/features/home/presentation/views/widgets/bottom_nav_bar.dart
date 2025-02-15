@@ -53,7 +53,6 @@ class BottomNavBar extends StatelessWidget {
           ),
           title: (""),
           activeColorPrimary: kPrimaryColor,
-          inactiveColorPrimary: Colors.white,
         ),
         PersistentBottomNavBarItem(
           icon: Icon(CupertinoIcons.search),

@@ -5,6 +5,7 @@ import 'package:stylish_app/core/widgets/custom_appbar.dart';
 import 'package:stylish_app/core/widgets/custom_text_feild.dart';
 import 'package:stylish_app/core/widgets/sort_and_filter.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/category_list_view.dart';
+import 'package:stylish_app/features/home/presentation/views/widgets/sale_item_widget.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -30,6 +31,8 @@ class HomeViewBody extends StatelessWidget {
           CategoryListView(
             categories: CategoryContent.categoryContent,
           ),
+          const SizedBox(height: 15),
+          const SaleItemWidget(),
         ],
       ),
     );

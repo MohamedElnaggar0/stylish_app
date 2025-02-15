@@ -34,6 +34,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/profile.png
   AssetGenImage get profile => const AssetGenImage('assets/images/profile.png');
 
+  /// File path: assets/images/sale_image.png
+  AssetGenImage get saleImage =>
+      const AssetGenImage('assets/images/sale_image.png');
+
   /// File path: assets/images/womens.png
   AssetGenImage get womens => const AssetGenImage('assets/images/womens.png');
 
@@ -46,6 +50,7 @@ class $AssetsImagesGen {
     kids,
     mens,
     profile,
+    saleImage,
     womens,
   ];
 }
@@ -59,8 +64,8 @@ class $AssetsSvgGen {
   /// File path: assets/svg/apple.svg
   String get apple => 'assets/svg/apple.svg';
 
-  /// File path: assets/svg/beauty.svg
-  String get beauty => 'assets/svg/beauty.svg';
+  /// File path: assets/svg/arrow.svg
+  String get arrow => 'assets/svg/arrow.svg';
 
   /// File path: assets/svg/facebook.svg
   String get facebook => 'assets/svg/facebook.svg';
@@ -98,6 +103,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/profile.svg
   String get profile => 'assets/svg/profile.svg';
 
+  /// File path: assets/svg/sale_image.svg
+  String get saleImage => 'assets/svg/sale_image.svg';
+
   /// File path: assets/svg/stylish_logo.svg
   String get stylishLogo => 'assets/svg/stylish_logo.svg';
 
@@ -111,7 +119,7 @@ class $AssetsSvgGen {
   List<String> get values => [
     stylishWord,
     apple,
-    beauty,
+    arrow,
     facebook,
     fashion,
     filter,
@@ -124,6 +132,7 @@ class $AssetsSvgGen {
     onboarding2,
     onboarding3,
     profile,
+    saleImage,
     stylishLogo,
     upDownArrow,
     womens,

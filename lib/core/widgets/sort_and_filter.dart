@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_app/core/gen/assets.gen.dart';
 import 'package:stylish_app/core/widgets/custom_sort_filter_container.dart';
+import 'package:stylish_app/gen/assets.gen.dart';
 
 class SortAndFilter extends StatelessWidget {
   const SortAndFilter({super.key, required this.text, this.text2});

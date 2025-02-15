@@ -1,4 +1,4 @@
-import 'package:stylish_app/core/gen/assets.gen.dart';
+import 'package:stylish_app/gen/assets.gen.dart';
 
 class LoginImagesContent {
   static final List<String> loginImages = [

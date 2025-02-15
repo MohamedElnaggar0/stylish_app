@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:stylish_app/core/gen/assets.gen.dart';
+import 'package:stylish_app/gen/assets.gen.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});

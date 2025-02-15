@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:stylish_app/core/utils/app_router.dart';
 import 'package:stylish_app/features/splash/presentation/views/widgets/sliding_text.dart';
-import 'package:stylish_app/core/gen/assets.gen.dart';
+import 'package:stylish_app/gen/assets.gen.dart';
 
 class SplachViewBody extends StatefulWidget {
   const SplachViewBody({super.key});
