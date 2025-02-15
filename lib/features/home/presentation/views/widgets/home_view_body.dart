@@ -9,6 +9,7 @@ import 'package:stylish_app/core/widgets/sort_and_filter.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/category_list_view.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/sale_item_widget.dart';
 import 'package:stylish_app/features/home/presentation/views/widgets/special_offers_widget.dart';
+import 'package:stylish_app/gen/assets.gen.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -40,12 +41,25 @@ class HomeViewBody extends StatelessWidget {
             const SizedBox(height: 15),
             CustomTextContainer(
               color: Color(0xff4392F9),
+              text: 'Deal of the Day',
+              svgImage: Assets.svg.alarm,
+              dateOrTime: '22h 55m 20s remaining',
             ),
             const SizedBox(height: 15),
             customProductItemlistView(context),
             const SizedBox(height: 15),
             const SpecialOffersWidget(),
             const SizedBox(height: 15),
+            CustomTextContainer(
+              color: Color(0xffFD6E86),
+              text: 'Trending Products ',
+              svgImage: Assets.svg.date,
+              dateOrTime: 'Last Date 29/02/22',
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            customProductItemlistView(context)
           ],
         ),
       ),

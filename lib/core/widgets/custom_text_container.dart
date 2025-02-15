@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish_app/core/widgets/custom_container_with_border.dart';
-import 'package:stylish_app/gen/assets.gen.dart';
 
 class CustomTextContainer extends StatelessWidget {
-  const CustomTextContainer({super.key, required this.color});
+  const CustomTextContainer(
+      {super.key,
+      required this.color,
+      required this.text,
+      required this.svgImage,
+      required this.dateOrTime});
   final Color color;
+  final String text;
+  final String svgImage;
+  final String dateOrTime;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +32,7 @@ class CustomTextContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Deal of the Day',
+                    text,
                     style: TextStyle(fontSize: 25, color: Colors.white),
                   ),
                   Row(
@@ -33,14 +40,14 @@ class CustomTextContainer extends StatelessWidget {
                       SvgPicture.asset(
                         height: 20,
                         width: 20,
-                        Assets.svg.alarm,
+                        svgImage,
                         fit: BoxFit.fill,
                       ),
                       const SizedBox(
                         width: 10,
                       ),
                       Text(
-                        '22h 55m 20s remaining',
+                        dateOrTime,
                         style: TextStyle(
                             fontSize: 18, color: Colors.grey.shade300),
                       ),
