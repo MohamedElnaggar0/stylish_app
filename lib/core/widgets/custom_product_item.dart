@@ -3,8 +3,9 @@ import 'package:stylish_app/constansts.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
 class CustomProductItem extends StatelessWidget {
-  const CustomProductItem({super.key});
-
+  const CustomProductItem({super.key, this.realPrice, this.salePrice});
+  final String? realPrice;
+  final String? salePrice;
   @override
   Widget build(BuildContext context) {
     double hight = MediaQuery.of(context).size.height * 0.30;
@@ -57,16 +58,16 @@ class CustomProductItem extends StatelessWidget {
                 const SizedBox(height: 5),
                 Row(
                   children: [
-                    const Text(
-                      '₹2499',
+                    Text(
+                      realPrice ?? '',
                       style: TextStyle(
                         decoration: TextDecoration.lineThrough,
                         color: Colors.grey,
                       ),
                     ),
-                    const SizedBox(width: 5),
+                    SizedBox(width: 5),
                     Text(
-                      '40%Off',
+                      salePrice ?? '',
                       style: TextStyle(color: kPrimaryColor),
                     )
                   ],

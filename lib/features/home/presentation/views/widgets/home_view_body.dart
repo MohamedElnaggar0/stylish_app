@@ -76,7 +76,10 @@ class HomeViewBody extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(right: 8.0),
-            child: CustomProductItem(),
+            child: CustomProductItem(
+              realPrice: '100',
+              salePrice: '80%Off',
+            ),
           );
         },
         itemCount: 4,
