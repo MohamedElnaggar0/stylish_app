@@ -83,6 +83,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/arrow.svg
   String get arrow => 'assets/svg/arrow.svg';
 
+  /// File path: assets/svg/back.svg
+  String get back => 'assets/svg/back.svg';
+
   /// File path: assets/svg/date.svg
   String get date => 'assets/svg/date.svg';
 
@@ -146,6 +149,7 @@ class $AssetsSvgGen {
     alarm,
     apple,
     arrow,
+    back,
     date,
     facebook,
     fashion,

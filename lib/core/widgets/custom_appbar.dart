@@ -22,12 +22,15 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SvgPicture.asset(startIcon),
+          GestureDetector(onTap: onTap, child: SvgPicture.asset(startIcon)),
           midIcon != null
               ? SvgPicture.asset(midIcon!)
               : Text(
                   title ?? '',
-                  style: const TextStyle(fontSize: 20),
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
           GestureDetector(
             onTap: onTap,
