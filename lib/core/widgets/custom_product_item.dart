@@ -19,10 +19,11 @@ class CustomProductItem extends StatelessWidget {
       ),
       child: Column(
         children: [
+          SizedBox(height: 2),
           ClipRRect(
             borderRadius: BorderRadius.circular(5),
             child: Image.asset(
-              Assets.images.woman.path,
+              Assets.images.jacket.path,
               fit: BoxFit.cover,
             ),
           ),

@@ -25,6 +25,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/google.png
   AssetGenImage get google => const AssetGenImage('assets/images/google.png');
 
+  /// File path: assets/images/jacket.png
+  AssetGenImage get jacket => const AssetGenImage('assets/images/jacket.png');
+
   /// File path: assets/images/kids.png
   AssetGenImage get kids => const AssetGenImage('assets/images/kids.png');
 
@@ -54,6 +57,7 @@ class $AssetsImagesGen {
     fashion,
     getStarted,
     google,
+    jacket,
     kids,
     mens,
     profile,

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:stylish_app/core/utils/app_router.dart';
 
 import 'package:stylish_app/core/utils/category_content.dart';
 import 'package:stylish_app/core/widgets/custom_appbar.dart';
@@ -17,12 +19,20 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      clipBehavior: Clip.none,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
             const SizedBox(height: 30),
-            const CustomAppbar(),
+            CustomAppbar(
+              startIcon: Assets.svg.menu,
+              midIcon: Assets.svg.logo,
+              endIcon: Assets.images.profile.path,
+              onTap: () {
+                GoRouter.of(context).push(AppRouter.kProfileView);
+              },
+            ),
             const CustomTextFeild(
               hintText: 'Search any Product',
               prefixIcon: Icons.search,

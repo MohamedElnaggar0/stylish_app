@@ -25,7 +25,7 @@ class SortAndFilter extends StatelessWidget {
                     text: text2,
                     style: const TextStyle(
                         color: Colors.black,
-                        fontSize: 16,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold)),
               ],
             ),

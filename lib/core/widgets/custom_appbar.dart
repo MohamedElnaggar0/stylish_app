@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:stylish_app/gen/assets.gen.dart';
 
 class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({super.key});
-
+  const CustomAppbar(
+      {super.key,
+      this.title,
+      this.midIcon,
+      required this.startIcon,
+      this.endIcon,
+      this.onTap});
+  final String? title;
+  final String startIcon;
+  final String? midIcon;
+  final String? endIcon;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,9 +22,17 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SvgPicture.asset(Assets.svg.menu),
-          SvgPicture.asset(Assets.svg.logo),
-          Image.asset(Assets.images.profile.path),
+          SvgPicture.asset(startIcon),
+          midIcon != null
+              ? SvgPicture.asset(midIcon!)
+              : Text(
+                  title ?? '',
+                  style: const TextStyle(fontSize: 20),
+                ),
+          GestureDetector(
+            onTap: onTap,
+            child: endIcon != null ? Image.asset(endIcon!) : const SizedBox(),
+          ),
         ],
       ),
     );
