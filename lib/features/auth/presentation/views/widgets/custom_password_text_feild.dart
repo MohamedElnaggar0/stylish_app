@@ -5,12 +5,12 @@ class CustomPasswordTextFeild extends StatefulWidget {
   const CustomPasswordTextFeild({
     super.key,
     required this.hintText,
-    required this.prefixIcon,
-    required this.suffixIcon,
+    this.prefixIcon,
+    this.suffixIcon,
   });
   final String hintText;
-  final IconData prefixIcon;
-  final IconData suffixIcon;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
 
   @override
   State<CustomPasswordTextFeild> createState() =>
@@ -30,7 +30,8 @@ class _CustomPasswordTextFeildState extends State<CustomPasswordTextFeild> {
     return TextFormField(
       obscureText: obscureText,
       decoration: InputDecoration(
-        contentPadding: const EdgeInsets.symmetric(vertical: 20),
+        contentPadding:
+            const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         hintText: widget.hintText,
         suffixIcon: IconButton(
           onPressed: () {
@@ -40,7 +41,7 @@ class _CustomPasswordTextFeildState extends State<CustomPasswordTextFeild> {
           },
           icon: Icon(widget.suffixIcon),
         ),
-        prefixIcon: Icon(widget.prefixIcon),
+        prefixIcon: widget.prefixIcon != null ? Icon(widget.prefixIcon) : null,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
