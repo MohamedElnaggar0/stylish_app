@@ -18,7 +18,7 @@ class ProfileViewBody extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             CustomAppbar(
               startIcon: Assets.svg.back,
               onTap: () {
@@ -32,16 +32,16 @@ class ProfileViewBody extends StatelessWidget {
                 buildEditIcon(),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             personalDetails(context),
-            SizedBox(height: 25),
+            const SizedBox(height: 25),
             businessAddressDetails(),
-            SizedBox(height: 25),
+            const SizedBox(height: 25),
             bankAccountDetails(),
             CustomButton(text: 'Save', onTap: () {}),
-            SizedBox(height: 25),
+            const SizedBox(height: 25),
           ],
         ),
       ),
@@ -75,8 +75,8 @@ class ProfileViewBody extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           color: Colors.blue,
         ),
-        padding: EdgeInsets.all(8),
-        child: Icon(
+        padding: const EdgeInsets.all(8),
+        child: const Icon(
           Icons.edit,
           color: Colors.white,
           size: 20,
@@ -91,24 +91,24 @@ class ProfileViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             'Personal Details',
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 20),
-          CustomTextAndTextfeild(
+          const SizedBox(height: 20),
+          const CustomTextAndTextfeild(
               hintText: 'aashifa@gmail.com', text: 'Email Address'),
-          SizedBox(height: 20),
-          Text(
+          const SizedBox(height: 20),
+          const Text(
             'Password',
             style: TextStyle(fontSize: 14, color: Colors.black),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          CustomPasswordTextFeild(
+          const CustomPasswordTextFeild(
               hintText: '***********', suffixIcon: Icons.visibility),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           GestureDetector(
             onTap: () {
               GoRouter.of(context).goNamed(AppRouter.kForgetPasswordView);
@@ -121,8 +121,8 @@ class ProfileViewBody extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 25),
-          Divider(
+          const SizedBox(height: 25),
+          const Divider(
             color: Colors.grey,
             thickness: 1.0,
           ),
@@ -132,7 +132,7 @@ class ProfileViewBody extends StatelessWidget {
   }
 
   Widget businessAddressDetails() {
-    return Align(
+    return const Align(
       alignment: Alignment.topLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,7 +163,7 @@ class ProfileViewBody extends StatelessWidget {
   }
 
   Widget bankAccountDetails() {
-    return Align(
+    return const Align(
       alignment: Alignment.topLeft,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

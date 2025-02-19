@@ -24,19 +24,19 @@ class SaleItemWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               _textItemContent(context),
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           dotPage(Colors.grey.shade400),
-          dotPage(Color(0xffFFA3B3)),
+          dotPage(const Color(0xffFFA3B3)),
           dotPage(Colors.grey.shade400)
         ])
       ],
@@ -44,25 +44,25 @@ class SaleItemWidget extends StatelessWidget {
   }
 
   Widget _textItemContent(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
+    return const Padding(
+      padding: EdgeInsets.all(15.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             '40-50% OFF',
             style: TextStyle(
                 fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          const Text(
+          Text(
             'Now in (product)\nAll colours',
             style: TextStyle(
               fontSize: 17,
               color: Colors.white,
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 20,
           ),
           CustomContainerWithBorder(

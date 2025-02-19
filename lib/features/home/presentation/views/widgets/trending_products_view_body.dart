@@ -26,7 +26,7 @@ class TrendingProductsViewBody extends StatelessWidget {
                 GoRouter.of(context).push(AppRouter.kProfileView);
               },
             ),
-            CustomTextFeild(
+            const CustomTextFeild(
                 hintText: 'Search any Product',
                 prefixIcon: Icons.search,
                 suffixIcon: Icons.mic),
@@ -47,7 +47,7 @@ class TrendingProductsViewBody extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       padding: EdgeInsets.zero,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: 20,
       clipBehavior: Clip.none,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -57,8 +57,8 @@ class TrendingProductsViewBody extends StatelessWidget {
             1.37,
       ),
       itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
+        return const Padding(
+          padding: EdgeInsets.all(8.0),
           child: CustomProductItem(),
         );
       },

@@ -50,7 +50,7 @@ class HomeViewBody extends StatelessWidget {
             const SaleItemWidget(),
             const SizedBox(height: 15),
             CustomTextContainer(
-              color: Color(0xff4392F9),
+              color: const Color(0xff4392F9),
               text: 'Deal of the Day',
               svgImage: Assets.svg.alarm,
               dateOrTime: '22h 55m 20s remaining',
@@ -61,7 +61,7 @@ class HomeViewBody extends StatelessWidget {
             const SpecialOffersWidget(),
             const SizedBox(height: 15),
             CustomTextContainer(
-              color: Color(0xffFD6E86),
+              color: const Color(0xffFD6E86),
               text: 'Trending Products ',
               svgImage: Assets.svg.date,
               dateOrTime: 'Last Date 29/02/22',
@@ -84,8 +84,8 @@ class HomeViewBody extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(right: 8.0),
+          return const Padding(
+            padding: EdgeInsets.only(right: 8.0),
             child: CustomProductItem(
               realPrice: '100',
               salePrice: '80%Off',

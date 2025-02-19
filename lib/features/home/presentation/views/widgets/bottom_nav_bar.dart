@@ -18,24 +18,24 @@ class BottomNavBar extends StatelessWidget {
     controller = PersistentTabController(initialIndex: 0);
     List<Widget> buildScreens() {
       return [
-        HomeView(),
-        TrendingProductsView(),
-        ShopView(),
-        SearchView(),
-        ProfileView(),
+        const HomeView(),
+        const TrendingProductsView(),
+        const ShopView(),
+        const SearchView(),
+        const ProfileView(),
       ];
     }
 
     List<PersistentBottomNavBarItem> navBarsItems() {
       return [
         PersistentBottomNavBarItem(
-          icon: Icon(Icons.home),
+          icon: const Icon(Icons.home),
           title: ("Home"),
           activeColorPrimary: kPrimaryColor,
           inactiveColorPrimary: Colors.black,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(
+          icon: const Icon(
             Icons.favorite,
           ),
           title: ("Wishlist"),
@@ -43,11 +43,11 @@ class BottomNavBar extends StatelessWidget {
           inactiveColorPrimary: Colors.black,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(
+          icon: const Icon(
             CupertinoIcons.cart,
             color: Colors.white,
           ),
-          inactiveIcon: Icon(
+          inactiveIcon: const Icon(
             CupertinoIcons.cart,
             color: Colors.black,
           ),
@@ -55,13 +55,13 @@ class BottomNavBar extends StatelessWidget {
           activeColorPrimary: kPrimaryColor,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(CupertinoIcons.search),
+          icon: const Icon(CupertinoIcons.search),
           title: ("Search"),
           activeColorPrimary: kPrimaryColor,
           inactiveColorPrimary: Colors.black,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(CupertinoIcons.profile_circled),
+          icon: const Icon(CupertinoIcons.profile_circled),
           title: ("Profile"),
           activeColorPrimary: kPrimaryColor,
           inactiveColorPrimary: Colors.black,

@@ -6,8 +6,8 @@ class TrendingProductsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const TrendingProductsViewBody(),
+    return const Scaffold(
+      body: TrendingProductsViewBody(),
     );
   }
 }

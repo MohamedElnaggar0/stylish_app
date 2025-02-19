@@ -19,9 +19,9 @@ class CustomContainerWithBorder extends StatelessWidget {
         children: [
           Text(
             text,
-            style: TextStyle(color: Colors.white, fontSize: 18),
+            style: const TextStyle(color: Colors.white, fontSize: 18),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           SvgPicture.asset(

@@ -33,7 +33,7 @@ class CustomTextContainer extends StatelessWidget {
                 children: [
                   Text(
                     text,
-                    style: TextStyle(fontSize: 25, color: Colors.white),
+                    style: const TextStyle(fontSize: 25, color: Colors.white),
                   ),
                   Row(
                     children: [
@@ -54,7 +54,7 @@ class CustomTextContainer extends StatelessWidget {
                     ],
                   )
                 ]),
-            CustomContainerWithBorder(
+            const CustomContainerWithBorder(
               text: 'View All',
             ),
           ],

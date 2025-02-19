@@ -28,7 +28,7 @@ class CustomOnBoardingContainer extends StatelessWidget {
           ),
           Text(
             onboardingContent.title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
@@ -39,7 +39,7 @@ class CustomOnBoardingContainer extends StatelessWidget {
           Text(
             onboardingContent.description,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 14,
               color: Colors.grey,
             ),

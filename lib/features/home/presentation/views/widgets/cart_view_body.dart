@@ -15,7 +15,7 @@ class CartViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             CustomAppbar(
               startIcon: Assets.svg.back,
               title: 'Checkout',
@@ -25,7 +25,7 @@ class CartViewBody extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             deliveryAddress(context),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             shoppingList(context),
@@ -46,8 +46,8 @@ class CartViewBody extends StatelessWidget {
               width: 20,
               fit: BoxFit.fill,
             ),
-            SizedBox(width: 10),
-            Text(
+            const SizedBox(width: 10),
+            const Text(
               'Delivery Address',
               style: TextStyle(
                 fontSize: 20,
@@ -69,10 +69,10 @@ class CartViewBody extends StatelessWidget {
                     BoxShadow(
                         color: Colors.grey.shade300,
                         blurRadius: 3,
-                        offset: Offset(0, 5))
+                        offset: const Offset(0, 5))
                   ]),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -113,7 +113,7 @@ class CartViewBody extends StatelessWidget {
             BoxShadow(
                 color: Colors.grey.shade300,
                 blurRadius: 3,
-                offset: Offset(0, 5))
+                offset: const Offset(0, 5))
           ]),
       child: Center(
         child: SvgPicture.asset(Assets.svg.add),
@@ -125,7 +125,7 @@ class CartViewBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Shopping List',
           style: TextStyle(
             fontSize: 20,
@@ -161,7 +161,9 @@ class CartViewBody extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-              color: Colors.grey.shade300, blurRadius: 3, offset: Offset(0, 5))
+              color: Colors.grey.shade300,
+              blurRadius: 3,
+              offset: const Offset(0, 5))
         ],
       ),
       child: Padding(
@@ -171,19 +173,19 @@ class CartViewBody extends StatelessWidget {
             Row(
               children: [
                 Image.asset(Assets.images.jacket.path),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Men’s Casual Wear',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           'Variations:',
                           style: TextStyle(
                             fontSize: 20,
@@ -197,8 +199,8 @@ class CartViewBody extends StatelessWidget {
                         colorButtom(text: 'Blue'),
                       ],
                     ),
-                    StarRating(),
-                    Text(
+                    const StarRating(),
+                    const Text(
                       '\$34',
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
@@ -207,14 +209,14 @@ class CartViewBody extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Divider(
               color: Colors.grey.shade400,
               thickness: 1,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             totalPrice(),
@@ -233,7 +235,7 @@ class CartViewBody extends StatelessWidget {
       child: Text(
         text,
         textAlign: TextAlign.center,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 12,
         ),
       ),
@@ -241,7 +243,7 @@ class CartViewBody extends StatelessWidget {
   }
 
   Widget totalPrice() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(

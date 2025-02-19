@@ -15,7 +15,7 @@ class ShopViewBody extends StatelessWidget {
           padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               CustomAppbar(
                 startIcon: Assets.svg.back,
                 endIcon: Assets.images.cart.path,

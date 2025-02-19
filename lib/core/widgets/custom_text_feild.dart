@@ -17,6 +17,7 @@ class CustomTextFeild extends StatelessWidget {
         contentPadding:
             const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         hintText: hintText,
+        // ignore: prefer_const_constructors
         hintStyle: TextStyle(
           color: Colors.grey,
         ),

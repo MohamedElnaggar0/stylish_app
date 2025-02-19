@@ -16,18 +16,18 @@ class ForgetPasswordViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 50),
-          CustomTextWidget(
+          const SizedBox(height: 50),
+          const CustomTextWidget(
             text: 'Forget \nPassword?',
           ),
-          SizedBox(height: 30),
-          CustomTextFeild(
+          const SizedBox(height: 30),
+          const CustomTextFeild(
             hintText: 'Enter your email address',
             prefixIcon: Icons.email,
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           _sendEmailWidget(),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           CustomButton(
             text: 'Submit',
             onTap: () {

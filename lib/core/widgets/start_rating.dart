@@ -38,7 +38,7 @@ class StarRatingState extends State<StarRating> {
           currentRating.toString(),
           style: const TextStyle(fontSize: 20),
         ),
-        SizedBox(width: 5),
+        const SizedBox(width: 5),
         Row(
           children: List.generate(widget.starCount, (index) {
             return SizedBox(

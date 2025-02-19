@@ -13,9 +13,9 @@ class CustomTextAndTextfeild extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 14, color: Colors.black),
+          style: const TextStyle(fontSize: 14, color: Colors.black),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         CustomTextFeild(

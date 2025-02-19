@@ -58,7 +58,7 @@ abstract class AppRouter {
         path: kProfileView,
         builder: (context, state) => const ProfileView(),
       ),
-      GoRoute(path: kCartView, builder: (context, state) => CartView())
+      GoRoute(path: kCartView, builder: (context, state) => const CartView())
     ],
   );
 }

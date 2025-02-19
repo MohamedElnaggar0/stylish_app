@@ -60,9 +60,9 @@ class SignUpViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomLoginIcon(image: LoginImagesContent.loginImages[0]),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 CustomLoginIcon(image: LoginImagesContent.loginImages[1]),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 CustomLoginIcon(image: LoginImagesContent.loginImages[2]),
               ],
             ),
@@ -104,7 +104,7 @@ Widget _termsOfUseWidget() {
     child: RichText(
       text: TextSpan(
         children: [
-          TextSpan(
+          const TextSpan(
             text: 'By clicking the ',
             style: TextStyle(color: Colors.grey, fontSize: 18),
           ),
@@ -113,7 +113,7 @@ Widget _termsOfUseWidget() {
             style: TextStyle(color: kPrimaryColor, fontSize: 18),
             recognizer: TapGestureRecognizer()..onTap = () {},
           ),
-          TextSpan(
+          const TextSpan(
             text: ' button, you agree\nto the public offer',
             style: TextStyle(color: Colors.grey, fontSize: 18),
           ),

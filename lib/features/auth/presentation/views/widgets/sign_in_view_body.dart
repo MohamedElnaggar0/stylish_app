@@ -63,9 +63,9 @@ class SignInViewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomLoginIcon(image: LoginImagesContent.loginImages[0]),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 CustomLoginIcon(image: LoginImagesContent.loginImages[1]),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 CustomLoginIcon(image: LoginImagesContent.loginImages[2]),
               ],
             ),

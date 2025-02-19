@@ -19,7 +19,7 @@ class CustomProductItem extends StatelessWidget {
       ),
       child: Column(
         children: [
-          SizedBox(height: 2),
+          const SizedBox(height: 2),
           ClipRRect(
             borderRadius: BorderRadius.circular(5),
             child: Image.asset(
@@ -61,12 +61,12 @@ class CustomProductItem extends StatelessWidget {
                   children: [
                     Text(
                       realPrice ?? '',
-                      style: TextStyle(
+                      style: const TextStyle(
                         decoration: TextDecoration.lineThrough,
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Text(
                       salePrice ?? '',
                       style: TextStyle(color: kPrimaryColor),

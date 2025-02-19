@@ -20,9 +20,9 @@ class CustomSortFilterContainer extends StatelessWidget {
           children: [
             Text(
               text,
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: const TextStyle(color: Colors.black, fontSize: 15),
             ),
-            SizedBox(width: 5),
+            const SizedBox(width: 5),
             SvgPicture.asset(svgImage)
           ],
         ),

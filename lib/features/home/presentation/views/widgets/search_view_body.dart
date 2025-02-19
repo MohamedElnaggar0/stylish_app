@@ -20,7 +20,7 @@ class SearchViewBody extends StatelessWidget {
             GoRouter.of(context).push(AppRouter.kProfileView);
           },
         ),
-        CustomTextFeild(
+        const CustomTextFeild(
           hintText: 'Search Product',
           prefixIcon: Icons.search,
         ),

@@ -6,8 +6,8 @@ class ShopView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const ShopViewBody(),
+    return const Scaffold(
+      body: ShopViewBody(),
     );
   }
 }
