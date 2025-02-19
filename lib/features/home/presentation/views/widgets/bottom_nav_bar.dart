@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:stylish_app/constansts.dart';
 import 'package:stylish_app/features/home/presentation/views/home_view.dart';
+import 'package:stylish_app/features/home/presentation/views/profile_view.dart';
 import 'package:stylish_app/features/home/presentation/views/search_view.dart';
-import 'package:stylish_app/features/home/presentation/views/setting_view.dart';
 import 'package:stylish_app/features/home/presentation/views/shop_view.dart';
 import 'package:stylish_app/features/home/presentation/views/trending_products_view.dart';
 
@@ -22,7 +22,7 @@ class BottomNavBar extends StatelessWidget {
         TrendingProductsView(),
         ShopView(),
         SearchView(),
-        SettingView()
+        ProfileView(),
       ];
     }
 
@@ -61,8 +61,8 @@ class BottomNavBar extends StatelessWidget {
           inactiveColorPrimary: Colors.black,
         ),
         PersistentBottomNavBarItem(
-          icon: Icon(CupertinoIcons.settings),
-          title: ("Setting"),
+          icon: Icon(CupertinoIcons.profile_circled),
+          title: ("Profile"),
           activeColorPrimary: kPrimaryColor,
           inactiveColorPrimary: Colors.black,
         ),
