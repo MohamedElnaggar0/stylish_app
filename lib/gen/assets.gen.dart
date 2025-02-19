@@ -15,6 +15,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/beauty.png
   AssetGenImage get beauty => const AssetGenImage('assets/images/beauty.png');
 
+  /// File path: assets/images/cart.png
+  AssetGenImage get cart => const AssetGenImage('assets/images/cart.png');
+
   /// File path: assets/images/fashion.png
   AssetGenImage get fashion => const AssetGenImage('assets/images/fashion.png');
 
@@ -58,6 +61,7 @@ class $AssetsImagesGen {
   /// List of all assets
   List<AssetGenImage> get values => [
     beauty,
+    cart,
     fashion,
     getStarted,
     google,
@@ -79,6 +83,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Stylish_word.svg
   String get stylishWord => 'assets/svg/Stylish_word.svg';
 
+  /// File path: assets/svg/add.svg
+  String get add => 'assets/svg/add.svg';
+
   /// File path: assets/svg/alarm.svg
   String get alarm => 'assets/svg/alarm.svg';
 
@@ -90,6 +97,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/back.svg
   String get back => 'assets/svg/back.svg';
+
+  /// File path: assets/svg/cart.svg
+  String get cart => 'assets/svg/cart.svg';
 
   /// File path: assets/svg/date.svg
   String get date => 'assets/svg/date.svg';
@@ -108,6 +118,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/kids.svg
   String get kids => 'assets/svg/kids.svg';
+
+  /// File path: assets/svg/location.svg
+  String get location => 'assets/svg/location.svg';
 
   /// File path: assets/svg/logo.svg
   String get logo => 'assets/svg/logo.svg';
@@ -154,16 +167,19 @@ class $AssetsSvgGen {
   /// List of all assets
   List<String> get values => [
     stylishWord,
+    add,
     alarm,
     apple,
     arrow,
     back,
+    cart,
     date,
     facebook,
     fashion,
     filter,
     google,
     kids,
+    location,
     logo,
     mens,
     menu,

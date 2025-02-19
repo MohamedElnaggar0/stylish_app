@@ -34,7 +34,11 @@ class CustomAppbar extends StatelessWidget {
                 ),
           GestureDetector(
             onTap: onTap,
-            child: endIcon != null ? Image.asset(endIcon!) : const SizedBox(),
+            child: endIcon != null
+                ? Image.asset(
+                    endIcon!,
+                  )
+                : const SizedBox(),
           ),
         ],
       ),

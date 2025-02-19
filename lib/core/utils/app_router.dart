@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:stylish_app/features/auth/presentation/views/forget_password_view.dart';
 import 'package:stylish_app/features/auth/presentation/views/sign_in_view.dart';
 import 'package:stylish_app/features/auth/presentation/views/sign_up_view.dart';
+import 'package:stylish_app/features/home/presentation/views/cart_view.dart';
 import 'package:stylish_app/features/home/presentation/views/get_started_view.dart';
 import 'package:stylish_app/features/home/presentation/views/home_view.dart';
 import 'package:stylish_app/features/home/presentation/views/profile_view.dart';
@@ -18,6 +19,7 @@ abstract class AppRouter {
   static const kGetStartedView = '/getStartedView';
   static const kBottoNavBar = '/bottoNavBar';
   static const kProfileView = '/profileView';
+  static const kCartView = '/cartView';
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -56,6 +58,7 @@ abstract class AppRouter {
         path: kProfileView,
         builder: (context, state) => const ProfileView(),
       ),
+      GoRoute(path: kCartView, builder: (context, state) => CartView())
     ],
   );
 }
