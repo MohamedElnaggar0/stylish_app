@@ -6,13 +6,15 @@ class CustomAppbar extends StatelessWidget {
       {super.key,
       this.title,
       this.midIcon,
-      required this.startIcon,
+      this.startIcon,
       this.endIcon,
-      this.onTap});
+      this.onTap,
+      this.firstOnTap});
   final String? title;
-  final String startIcon;
+  final String? startIcon;
   final String? midIcon;
   final String? endIcon;
+  final VoidCallback? firstOnTap;
   final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,11 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GestureDetector(onTap: onTap, child: SvgPicture.asset(startIcon)),
+          GestureDetector(
+              onTap: firstOnTap,
+              child: startIcon != null
+                  ? SvgPicture.asset(startIcon!)
+                  : const SizedBox()),
           midIcon != null
               ? SvgPicture.asset(midIcon!)
               : Text(

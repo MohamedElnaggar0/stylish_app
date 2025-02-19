@@ -9,22 +9,19 @@ class ShopViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              const SizedBox(height: 30),
-              CustomAppbar(
-                startIcon: Assets.svg.back,
-                endIcon: Assets.images.cart.path,
-                onTap: () {
-                  GoRouter.of(context).push(AppRouter.kCartView);
-                },
-              ),
-            ],
-          ),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(
+          children: [
+            const SizedBox(height: 30),
+            CustomAppbar(
+              endIcon: Assets.images.cart.path,
+              onTap: () {
+                GoRouter.of(context).push(AppRouter.kCartView);
+              },
+            ),
+          ],
         ),
       ),
     );

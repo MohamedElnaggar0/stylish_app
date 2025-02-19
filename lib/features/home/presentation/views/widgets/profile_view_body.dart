@@ -19,11 +19,7 @@ class ProfileViewBody extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 30),
-            CustomAppbar(
-              startIcon: Assets.svg.back,
-              onTap: () {
-                GoRouter.of(context).pop();
-              },
+            const CustomAppbar(
               title: 'Checkout',
             ),
             Stack(
@@ -174,12 +170,12 @@ class ProfileViewBody extends StatelessWidget {
           ),
           SizedBox(height: 20),
           CustomTextAndTextfeild(
-              hintText: 'Bank Account Number', text: '204356XXXXXXX'),
+              text: 'Bank Account Number', hintText: '204356XXXXXXX'),
           SizedBox(height: 20),
           CustomTextAndTextfeild(
-              hintText: 'Account Holder’s Name', text: 'Abhiraj Sisodiya'),
+              text: 'Account Holder’s Name', hintText: 'Abhiraj Sisodiya'),
           SizedBox(height: 20),
-          CustomTextAndTextfeild(hintText: 'IFSC Code', text: 'SBIN00428'),
+          CustomTextAndTextfeild(text: 'IFSC Code', hintText: 'SBIN00428'),
           SizedBox(height: 25),
         ],
       ),

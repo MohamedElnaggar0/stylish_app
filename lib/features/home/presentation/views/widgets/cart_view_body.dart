@@ -18,6 +18,7 @@ class CartViewBody extends StatelessWidget {
             const SizedBox(height: 30),
             CustomAppbar(
               startIcon: Assets.svg.back,
+              firstOnTap: () => Navigator.pop(context),
               title: 'Checkout',
             ),
             Divider(
