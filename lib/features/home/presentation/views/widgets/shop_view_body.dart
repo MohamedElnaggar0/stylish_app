@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_app/core/utils/app_router.dart';
 import 'package:stylish_app/core/widgets/custom_appbar.dart';
+import 'package:stylish_app/features/home/presentation/views/widgets/product_show.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
 class ShopViewBody extends StatelessWidget {
@@ -21,6 +22,7 @@ class ShopViewBody extends StatelessWidget {
                 GoRouter.of(context).push(AppRouter.kCartView);
               },
             ),
+            const ProductShow(),
           ],
         ),
       ),
