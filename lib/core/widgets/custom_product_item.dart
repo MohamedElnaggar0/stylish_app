@@ -70,9 +70,9 @@ class CustomProductItem extends StatelessWidget {
                     Text(
                       salePrice ?? '',
                       style: TextStyle(color: kPrimaryColor),
-                    )
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),
