@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_app/core/utils/app_router.dart';
 import 'package:stylish_app/core/widgets/custom_button.dart';
@@ -20,17 +21,19 @@ class GetStartedViewBody extends StatelessWidget {
         padding: const EdgeInsets.all(30.0),
         child: Column(children: [
           const Spacer(),
-          const Text(
+          Text(
             '     You want\nAuthentic, here\n       you go!',
             style: TextStyle(
-                fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold),
+                fontSize: 20.sp,
+                color: Colors.white,
+                fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 20),
-          const Text(
+          20.verticalSpace,
+          Text(
             'Find it here , buy it now!',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: TextStyle(fontSize: 10.sp, color: Colors.white),
           ),
-          const SizedBox(height: 30),
+          30.verticalSpace,
           CustomButton(
               text: 'Get Started',
               onTap: () {

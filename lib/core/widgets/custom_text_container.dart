@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish_app/core/widgets/custom_container_with_border.dart';
 
@@ -16,11 +17,11 @@ class CustomTextContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.11,
-      width: double.infinity,
+      height: 100.h,
+      width: 343.w,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(12.r),
       ),
       child: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -33,7 +34,7 @@ class CustomTextContainer extends StatelessWidget {
                 children: [
                   Text(
                     text,
-                    style: const TextStyle(fontSize: 25, color: Colors.white),
+                    style: TextStyle(fontSize: 12.sp, color: Colors.white),
                   ),
                   Row(
                     children: [
@@ -49,7 +50,7 @@ class CustomTextContainer extends StatelessWidget {
                       Text(
                         dateOrTime,
                         style: TextStyle(
-                            fontSize: 18, color: Colors.grey.shade300),
+                            fontSize: 8.sp, color: Colors.grey.shade300),
                       ),
                     ],
                   )

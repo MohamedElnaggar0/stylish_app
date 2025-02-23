@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
 class SpecialOffersWidget extends StatelessWidget {
@@ -6,10 +7,9 @@ class SpecialOffersWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double hight = MediaQuery.of(context).size.height * 0.15;
     return Container(
-      height: hight,
-      width: double.infinity,
+      height: 110.h,
+      width: 340.w,
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(15)),
       child: Padding(
@@ -20,24 +20,25 @@ class SpecialOffersWidget extends StatelessWidget {
           children: [
             Image.asset(
               Assets.images.specialOffers.path,
-              height: 80,
-              width: 90,
+              height: 40.h,
+              width: 50.w,
               fit: BoxFit.fill,
             ),
-            const Column(
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Special Offers',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style:
+                      TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
-                  height: 10,
+                const SizedBox(
+                  height: 5,
                 ),
                 Text(
                   'We make sure you get the\noffer you need at best prices',
-                  style: TextStyle(fontSize: 18, color: Colors.grey),
+                  style: TextStyle(fontSize: 6.sp, color: Colors.grey),
                 )
               ],
             )

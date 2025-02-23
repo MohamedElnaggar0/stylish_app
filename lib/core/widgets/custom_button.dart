@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stylish_app/constansts.dart';
 
 class CustomButton extends StatelessWidget {
@@ -19,8 +20,10 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: const TextStyle(
-                fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
+            style: TextStyle(
+                fontSize: 15.sp,
+                fontWeight: FontWeight.bold,
+                color: Colors.white),
           ),
         ),
       ),

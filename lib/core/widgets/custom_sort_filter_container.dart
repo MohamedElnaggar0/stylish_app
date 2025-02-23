@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomSortFilterContainer extends StatelessWidget {
@@ -10,9 +11,9 @@ class CustomSortFilterContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5), color: Colors.white),
-      height: 24,
-      width: 70,
+          borderRadius: BorderRadius.circular(5.r), color: Colors.white),
+      height: 25.h,
+      width: 40.w,
       child: Padding(
         padding: const EdgeInsets.all(3.0),
         child: Row(
@@ -20,9 +21,9 @@ class CustomSortFilterContainer extends StatelessWidget {
           children: [
             Text(
               text,
-              style: const TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 8.sp),
             ),
-            const SizedBox(width: 5),
+            5.horizontalSpace,
             SvgPicture.asset(svgImage)
           ],
         ),

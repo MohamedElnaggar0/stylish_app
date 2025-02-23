@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stylish_app/core/widgets/custom_sort_filter_container.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
@@ -17,15 +18,15 @@ class SortAndFilter extends StatelessWidget {
               children: [
                 TextSpan(
                     text: text,
-                    style: const TextStyle(
+                    style: TextStyle(
                         color: Colors.black,
-                        fontSize: 20,
+                        fontSize: 10.sp,
                         fontWeight: FontWeight.bold)),
                 TextSpan(
                     text: text2,
-                    style: const TextStyle(
+                    style: TextStyle(
                         color: Colors.black,
-                        fontSize: 20,
+                        fontSize: 10.sp,
                         fontWeight: FontWeight.bold)),
               ],
             ),
@@ -35,7 +36,7 @@ class SortAndFilter extends StatelessWidget {
             text: 'sort',
             svgImage: Assets.svg.upDownArrow,
           ),
-          const SizedBox(width: 10),
+          10.horizontalSpace,
           CustomSortFilterContainer(
             text: 'filter',
             svgImage: Assets.svg.filter,

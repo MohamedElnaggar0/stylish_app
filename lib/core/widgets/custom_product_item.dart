@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stylish_app/constansts.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
 
@@ -8,11 +9,9 @@ class CustomProductItem extends StatelessWidget {
   final String? salePrice;
   @override
   Widget build(BuildContext context) {
-    double hight = MediaQuery.of(context).size.height * 0.30;
-    double width = MediaQuery.of(context).size.width * 0.42;
     return Container(
-      height: hight,
-      width: width,
+      height: 500.h,
+      width: 100.w,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(5),

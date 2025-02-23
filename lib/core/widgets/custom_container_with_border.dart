@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish_app/gen/assets.gen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomContainerWithBorder extends StatelessWidget {
   const CustomContainerWithBorder({super.key, required this.text});
@@ -8,22 +9,20 @@ class CustomContainerWithBorder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45,
-      width: MediaQuery.of(context).size.width * 0.31,
+      height: 40.h,
+      width: 100.h,
       decoration: BoxDecoration(
         border: Border.all(width: 2, color: Colors.white),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(6.r),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             text,
-            style: const TextStyle(color: Colors.white, fontSize: 18),
+            style: TextStyle(color: Colors.white, fontSize: 6.sp),
           ),
-          const SizedBox(
-            width: 10,
-          ),
+          const SizedBox(width: 5),
           SvgPicture.asset(
             Assets.svg.arrow,
           ),
