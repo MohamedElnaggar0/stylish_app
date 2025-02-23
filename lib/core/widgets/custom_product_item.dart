@@ -31,27 +31,27 @@ class CustomProductItem extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Women Printed Kurta',
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 7.sp,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
                 ),
                 const SizedBox(height: 5),
-                const Text(
+                Text(
                   'Neque porro quisquam est qui dolorem ipsum quia',
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 6.sp,
                     color: Colors.grey,
                   ),
                 ),
                 const SizedBox(height: 5),
-                const Text(
+                Text(
                   '₹1500',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 7.sp,
                     color: Colors.black,
                   ),
                 ),

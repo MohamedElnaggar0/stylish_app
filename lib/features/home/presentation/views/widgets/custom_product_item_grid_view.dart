@@ -12,11 +12,9 @@ class CustomProductItemGridView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       itemCount: 20,
       clipBehavior: Clip.none,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: MediaQuery.of(context).size.width /
-            MediaQuery.of(context).size.height *
-            1.37,
+        childAspectRatio: 1 / 1.7,
       ),
       itemBuilder: (context, index) {
         return const Padding(
