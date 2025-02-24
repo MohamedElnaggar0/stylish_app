@@ -30,15 +30,15 @@ class SpecialOffersWidget extends StatelessWidget {
               children: [
                 Text(
                   'Special Offers',
-                  style:
-                      TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 16.spMin, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'We make sure you get the\noffer you need at best prices',
-                  style: TextStyle(fontSize: 6.sp, color: Colors.grey),
+                  style: TextStyle(fontSize: 12.spMin, color: Colors.grey),
                 )
               ],
             )

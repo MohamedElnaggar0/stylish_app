@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stylish_app/core/utils/app_router.dart';
 
@@ -79,8 +78,7 @@ class HomeViewBody extends StatelessWidget {
 
   Widget customProductItemlistView(context) {
     return SizedBox(
-      height: 310.h,
-      width: 375.w,
+      height: 245,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {

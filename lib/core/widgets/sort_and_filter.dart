@@ -20,13 +20,13 @@ class SortAndFilter extends StatelessWidget {
                     text: text,
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 10.sp,
+                        fontSize: 18.spMin,
                         fontWeight: FontWeight.bold)),
                 TextSpan(
                     text: text2,
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 10.sp,
+                        fontSize: 18.spMin,
                         fontWeight: FontWeight.bold)),
               ],
             ),

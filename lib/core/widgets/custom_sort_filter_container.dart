@@ -12,8 +12,8 @@ class CustomSortFilterContainer extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5.r), color: Colors.white),
-      height: 25.h,
-      width: 40.w,
+      height: 25,
+      width: 65,
       child: Padding(
         padding: const EdgeInsets.all(3.0),
         child: Row(
@@ -21,9 +21,11 @@ class CustomSortFilterContainer extends StatelessWidget {
           children: [
             Text(
               text,
-              style: TextStyle(color: Colors.black, fontSize: 8.sp),
+              style: TextStyle(color: Colors.black, fontSize: 12.spMin),
             ),
-            5.horizontalSpace,
+            const SizedBox(
+              width: 5,
+            ),
             SvgPicture.asset(svgImage)
           ],
         ),

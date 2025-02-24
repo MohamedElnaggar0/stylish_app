@@ -34,7 +34,7 @@ class CustomTextContainer extends StatelessWidget {
                 children: [
                   Text(
                     text,
-                    style: TextStyle(fontSize: 12.sp, color: Colors.white),
+                    style: TextStyle(fontSize: 16.spMin, color: Colors.white),
                   ),
                   Row(
                     children: [
@@ -50,7 +50,7 @@ class CustomTextContainer extends StatelessWidget {
                       Text(
                         dateOrTime,
                         style: TextStyle(
-                            fontSize: 8.sp, color: Colors.grey.shade300),
+                            fontSize: 12.spMin, color: Colors.grey.shade300),
                       ),
                     ],
                   )

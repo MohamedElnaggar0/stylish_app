@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stylish_app/core/widgets/custom_appbar.dart';
 import 'package:stylish_app/core/widgets/start_rating.dart';
@@ -48,10 +49,10 @@ class CartViewBody extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             const SizedBox(width: 10),
-            const Text(
+            Text(
               'Delivery Address',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 20.spMin,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -72,22 +73,22 @@ class CartViewBody extends StatelessWidget {
                         blurRadius: 3,
                         offset: const Offset(0, 5))
                   ]),
-              child: const Padding(
-                padding: EdgeInsets.all(8.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Address:',
-                      style: TextStyle(color: Colors.black, fontSize: 18),
+                      style: TextStyle(color: Colors.black, fontSize: 18.spMin),
                     ),
                     Text(
                       '216 St Paul\'s Rd, London N1 2LL, UK',
-                      style: TextStyle(color: Colors.black, fontSize: 20),
+                      style: TextStyle(color: Colors.black, fontSize: 18.spMin),
                     ),
                     Text(
                       'Contact : +44-784232',
-                      style: TextStyle(color: Colors.black, fontSize: 20),
+                      style: TextStyle(color: Colors.black, fontSize: 18.spMin),
                     ),
                   ],
                 ),
@@ -126,10 +127,10 @@ class CartViewBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+        Text(
           'Shopping List',
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 14.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -179,17 +180,17 @@ class CartViewBody extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'Men’s Casual Wear',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 14.spMin, fontWeight: FontWeight.bold),
                     ),
                     Row(
                       children: [
-                        const Text(
+                        Text(
                           'Variations:',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 12.spMin,
                           ),
                         ),
                         const SizedBox(width: 10),
@@ -201,10 +202,10 @@ class CartViewBody extends StatelessWidget {
                       ],
                     ),
                     const StarRating(),
-                    const Text(
+                    Text(
                       '\$34',
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 16.spMin, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

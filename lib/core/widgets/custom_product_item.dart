@@ -34,7 +34,7 @@ class CustomProductItem extends StatelessWidget {
                 Text(
                   'Women Printed Kurta',
                   style: TextStyle(
-                    fontSize: 7.sp,
+                    fontSize: 12.spMin,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
@@ -43,7 +43,7 @@ class CustomProductItem extends StatelessWidget {
                 Text(
                   'Neque porro quisquam est qui dolorem ipsum quia',
                   style: TextStyle(
-                    fontSize: 6.sp,
+                    fontSize: 10.spMin,
                     color: Colors.grey,
                   ),
                 ),
@@ -51,7 +51,7 @@ class CustomProductItem extends StatelessWidget {
                 Text(
                   '₹1500',
                   style: TextStyle(
-                    fontSize: 7.sp,
+                    fontSize: 12.spMin,
                     color: Colors.black,
                   ),
                 ),

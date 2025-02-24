@@ -24,14 +24,14 @@ class GetStartedViewBody extends StatelessWidget {
           Text(
             '     You want\nAuthentic, here\n       you go!',
             style: TextStyle(
-                fontSize: 20.sp,
+                fontSize: 20.spMin,
                 color: Colors.white,
                 fontWeight: FontWeight.bold),
           ),
           20.verticalSpace,
           Text(
             'Find it here , buy it now!',
-            style: TextStyle(fontSize: 10.sp, color: Colors.white),
+            style: TextStyle(fontSize: 15.spMin, color: Colors.white),
           ),
           30.verticalSpace,
           CustomButton(
